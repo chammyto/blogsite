@@ -21,6 +21,7 @@ p{
 .overlay {
   height: 0%;
   width: 100%;
+  padding: 0 3rem;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -33,7 +34,7 @@ p{
 
 .overlay-content {
   position: relative;
-  top: 15%;
+  top: 5%;
   width: 100%;
   text-align: center;
   margin-top: 20px;
@@ -167,4 +168,8 @@ p{
 #fb-profile, #ig-profile, #linked-profile{
   text-decoration: none;
   margin-right: 10px;
+}
+.navbar-brand img{
+  height: 150px;
+  width: 150px;
 }

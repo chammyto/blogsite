@@ -32,13 +32,16 @@
         <div id="reychamNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn text-info" onclick="closeNav()"><i class="fa fa-times"></i></a>
                 <div class="overlay-content">
-                    <a href="http://127.0.0.1:8000/"><h1>CHAMZ</h1></a>
+                    <a class="navbar-brand" href="http://127.0.0.1:8000/">
+                    <img src=" {{ url('/images/reycham-logo.png') }} " id="logo-ko" class="img-fluid" alt="logo">
+                    </a>
                     <a href="#about" onclick="closeNav()">About</a>
                     <a href="#skills" onclick="closeNav()">Skills</a>
                     <a href="#services" onclick="closeNav()">Services</a>
                     <a href="#portfolio" onclick="closeNav()">Portfolio</a>
                     <a href="#contact" onclick="closeNav()">Contact</a>
-                </div>
+                    <p class="text-info mt-5">&copy; Reycham Paña Portfolio 2021 &bull; All Rights Reserved</p>
+                </div> 
             </div>
     </div>
            
@@ -248,13 +251,13 @@
                                 <h4 class="text-center mb-4 action"><i class="fa fa-envelope text-info ml-1"></i> Email Me<b class="text-info">.</b></h4>
                                     <form class="email-me my-4 pl-3 pr-3" action="https://chamito.epizy.com"  onsubmit="onsubmitFunction()" method="post">
                                         <div class="form-group">
-                                        <input class="form-control text-white" id="email" type="email" oninvalid="oninvalidFunction()" onfocus="onfocusFunction(this)" onfocusout="onfocusoutFunction(this)" placeholder="Email" required="required">
+                                        <input class="form-control text-white bg-dark my-2" id="name" onfocus="onfocusFunction(this)" onfocusout="onfocusoutFunction(this)" type="text" placeholder="Full Name" required="required">
                                         </div>
                                         <div class="form-group">
-                                        <input class="form-control text-white" id="phone" onfocus="onfocusFunction(this)" onfocusout="onfocusoutFunction(this)" type="tel" placeholder="Phone" required="required">
+                                        <input class="form-control text-white bg-dark my-2" id="email" type="email" oninvalid="oninvalidFunction()" onfocus="onfocusFunction(this)" onfocusout="onfocusoutFunction(this)" placeholder="Email" required="required">
                                         </div>
                                         <div class="form-group">
-                                        <textarea class="form-control text-white" id="message" onfocus="onfocusFunction(this)" onfocusout="onfocusoutFunction(this)" type="text" placeholder="Message" rows="4" required="required"></textarea>
+                                        <textarea class="form-control text-white bg-dark my-2" id="message" onfocus="onfocusFunction(this)" onfocusout="onfocusoutFunction(this)" type="text" placeholder="Message" rows="4" required="required"></textarea>
                                     </div>
                                 <button id="sendMessageButton" class="btn btn-info btn-lg col-md-4 mt-4" data-text="Send Message" type="submit">Send</button>
                             </form>            

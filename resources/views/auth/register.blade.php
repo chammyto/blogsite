@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<!--
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -74,4 +75,9 @@
         </div>
     </div>
 </div>
+-->
+<div class="container-fluid">
+<h1 class="text-center text-danger">Error... You are not allowed to register to this site!</h1>
+</div>
+
 @endsection

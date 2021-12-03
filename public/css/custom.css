@@ -10,11 +10,19 @@ body{
     color: #dbdbdb !important;
     background-color: #242526;
 }
+p{
+  font-size: 20px;
+  font-weight: 300;
+}
+.greet{
+  font-size: 3rem;
+  font-weight: 400;
+}
 .overlay {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
@@ -25,16 +33,16 @@ body{
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -46,10 +54,10 @@ body{
 
 .overlay .closebtn {
   position: absolute;
-  top: -22px;
-  left: 8px;
-  font-size: 55px;
-  font-weight: 360;
+  top: 2px;
+  left: 2.4rem;
+  font-size: 38px;
+  font-weight:normal;
 }
 
 @media screen and (max-height: 450px) {
@@ -61,6 +69,7 @@ body{
   right: 35px;
   }
 }
+
 .menu-icon,
 .menu-icon:focus,
 .menu-icon:active,
@@ -72,23 +81,90 @@ body{
 .navbar{
   background-color: transparent !important;
   position: fixed;
+  z-index:1;
+  padding: 1rem 2rem;
 }
 .menu-icon{
-  font-size: 40px;
+  font-size: 35px;
+  z-index: 100;
 }
 .master-head{
   height: 100%;
+  width: 100%;
+  padding: 0 40px;
   display: absolute;
   padding-bottom: 12rem;
-  background: linear-gradient(to bottom, rgba(22, 19, 16, 0.9) 50%, rgba(22, 19, 16, 1) 100%), url('https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_1280.jpg');
+  background: linear-gradient(to bottom, rgba(22, 19, 16, 0.9) 50%, rgba(22, 19, 16, 1) 100%), url('https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_1280.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  overflow: hidden;
 }
 .profileImage{
-  height: 250px;
-  width: 275px;
-  border-radius: 50%;
+  height: 210px;
+  width: 237px;
+  filter: grayscale(100%);
   
+}
+.headButton{
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.page-section{
+  background-color: #18191a !important;
+  overflow: hidden;
+  padding: 5rem 2rem;
+}
+.jumbotron{
+  border-radius: 5px;
+  background-color: #242526;
+  padding: 2rem;
+}
+#skill-set{
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#skill-set li{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1px; 
+}
+#skill-heading{
+  color: #dbdbdb !important;
+}
+#show, #web-dev{
+  background-color: #242526; 
+  padding-top: 2.5em; 
+  padding-bottom: 2.5em;
+  height: 250px;
+  margin: .7rem 0;
+}
+#services-p, .card-text{
+  font-size: 1.2em;
+}
+.card{
+  overflow: hidden;
+  margin: 0 auto;
+  
+}
+.card a{
+  text-decoration: none;
+  color: #dbdbdb;
+}
+.card img:hover{
+  filter: grayscale(100);
+  transform: scale(1.04);
+  transition: 0.4s ease;
+}
+#fb-profile, #ig-profile, #linked-profile{
+  text-decoration: none;
+  margin-right: 10px;
 }

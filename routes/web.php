@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostsController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::resource('/blog', PostsController::class);
 
 Auth::routes();
 

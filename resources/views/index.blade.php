@@ -40,7 +40,8 @@
                     <a href="#services" onclick="closeNav()">Services</a>
                     <a href="#portfolio" onclick="closeNav()">Portfolio</a>
                     <a href="#contact" onclick="closeNav()">Contact</a>
-                    <p class="text-info mt-5">&copy; Reycham Paña Portfolio 2021 &bull; All Rights Reserved</p>
+                    <a href="/blog" onclick="closeNav()">Blog</a>
+
                 </div> 
             </div>
     </div>

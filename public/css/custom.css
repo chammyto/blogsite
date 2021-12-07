@@ -9,6 +9,7 @@ body{
     font-family: 'Roboto', sans-serif !important;
     color: #dbdbdb !important;
     background-color: #242526;
+    overflow-x: hidden;
 }
 p{
   font-size: 20px;
@@ -41,7 +42,7 @@ p{
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 4px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
